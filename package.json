@@ -1,0 +1,36 @@
+{
+  "name": "vmp-ex-mode",
+  "main": "./lib/vmp-ex-mode",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "repository": "https://github.com/tomoasleep/vim-cmdline-mode",
+  "license": "MIT",
+  "engines": {
+    "atom": "^1.0"
+  },
+  "dependencies": {
+    "preact": "^7.2.1",
+    "vim-ex-commands": "file:vim-ex-commands"
+  },
+  "devDependencies": {
+    "atom-mocha-test-runner": "^1.0.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "tap": "^10.3.2"
+  },
+  "atomTestRunner": "./test/custom-test-runner",
+  "consumedServices": {
+    "vim-mode-plus": {
+      "versions": {
+        "^0.1.0": "consumeVimModePlus"
+      }
+    }
+  },
+  "providedServices": {
+    "vim-cmdline-mode": {
+      "versions": {
+        "0.1.0": "provideService"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+ul.complete-candidates {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+  font-size: @input-font-size;
+
+  li.complete-candidate {
+ //   display: inline;
+    padding: 0 10px;
+    margin: 0px;
+
+    span.name {
+      display: inline-block;
+      width: 30%;
+      text-align: left;
+    }
+
+    span.description {
+      text-align: right;
+      color: @text-color-subtle;
+    }
+  }
+
+  li:nth-child(odd) {
+    background-color: @base-background-color;
+  }
+
+  li:nth-child(even) {
+    background-color: darken(@base-background-color, 15%);
+  }
+
+  li.complete-candidate.selected {
+    background-color: yellow;
+  }
+}

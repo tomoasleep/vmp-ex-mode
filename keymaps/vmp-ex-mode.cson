@@ -1,0 +1,18 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/advanced/keymaps
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  ':': 'vmp-ex-mode:open'
+
+'.cmdline.editor-container atom-text-editor':
+  'ctrl-w': 'editor:delete-to-beginning-of-word'
+  'tab': 'command-line:select-next'
+  'shift-tab': 'command-line:select-prev'
+  'ctrl-p': 'core:move-up'
+  'ctrl-n': 'core:move-down'
