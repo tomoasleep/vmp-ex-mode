@@ -46,7 +46,7 @@ describe('vmp-ex-mode', () => {
 
       it('can invoke "q" command', () => {
         commandlineEditor.setText('q');
-        atom.commands.dispatch(commandlineEditor, 'core:confirm')
+        atom.commands.dispatch(commandlineEditor, 'core:confirm');
         expect(atom.workspace.paneForItem(editor)).to.not.exist;
       });
     });

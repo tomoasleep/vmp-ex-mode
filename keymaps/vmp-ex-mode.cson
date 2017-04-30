@@ -12,7 +12,7 @@
 
 '.cmdline.editor-container atom-text-editor':
   'ctrl-w': 'editor:delete-to-beginning-of-word'
-  'tab': 'command-line:select-next'
-  'shift-tab': 'command-line:select-prev'
+  'tab': 'vmp-ex-mode:complete-next'
+  'shift-tab': 'vmp-ex-mode:complete-prev'
   'ctrl-p': 'core:move-up'
   'ctrl-n': 'core:move-down'

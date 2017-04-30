@@ -14,7 +14,7 @@ function optionalConfigurationFunction(mocha) {
       } else {
         return originalResolveFunction.call(this, packageName);
       }
-    }
+    };
   });
 }
 

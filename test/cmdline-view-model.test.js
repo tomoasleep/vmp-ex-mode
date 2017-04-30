@@ -40,7 +40,7 @@ describe('CmdlineViewModel', () => {
       const commandName = 'hogehogehoge';
 
       beforeEach(() => {
-        const editorEl = atom.views.getView(editor);
+        editorEl = atom.views.getView(editor);
         atom.commands.add(editorEl, commandName, () => { called = true; });
       });
 

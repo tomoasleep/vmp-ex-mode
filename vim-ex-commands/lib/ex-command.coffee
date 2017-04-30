@@ -5,12 +5,12 @@ class ExCommand
   constructor: (@cmddef, @callback, { @description, @argTypes: [] } = {}) ->
     @parser = new CommandDefParser(@cmddef)
 
-  execute: (callee, args...) ->
-    @callback.apply(callee, args)
+  execute: (target, args) ->
+    @callback({ target, args })
 
-  dispatch: (callee, line) ->
+  dispatch: (target, line) ->
     [_name, args...] = @parseLine(line)
-    @callback.apply(callee, args)
+    @execute(target, args)
 
   parseLine: (line) ->
     line.split(' ')
