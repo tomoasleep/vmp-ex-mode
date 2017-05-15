@@ -10,9 +10,9 @@
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   ':': 'vmp-ex-mode:open'
 
-'.cmdline.editor-container atom-text-editor':
+'.vmp-ex-mode-command-line .editor-container atom-text-editor':
   'ctrl-w': 'editor:delete-to-beginning-of-word'
   'tab': 'vmp-ex-mode:complete-next'
   'shift-tab': 'vmp-ex-mode:complete-prev'
-  'ctrl-p': 'core:move-up'
-  'ctrl-n': 'core:move-down'
+  'ctrl-n': 'vmp-ex-mode:complete-next'
+  'ctrl-p': 'vmp-ex-mode:complete-prev'

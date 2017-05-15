@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "preact": "^7.2.1",
+    "preact-redux": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
     "vim-ex-commands": "file:vim-ex-commands"
   },
   "devDependencies": {

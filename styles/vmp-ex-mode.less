@@ -4,24 +4,24 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-ul.complete-candidates {
+ul.vmp-ex-mode-completion {
   list-style-type: none;
   padding-left: 0px;
   margin: 0px;
   font-size: @input-font-size;
 
-  li.complete-candidate {
+  li.vmp-ex-mode-candidate {
  //   display: inline;
     padding: 0 10px;
     margin: 0px;
 
-    span.name {
+    span.vmp-ex-mode-candidate-command-name {
       display: inline-block;
       width: 30%;
       text-align: left;
     }
 
-    span.description {
+    span.vmp-ex-mode-candidate-command-description {
       text-align: right;
       color: @text-color-subtle;
     }
@@ -35,7 +35,7 @@ ul.complete-candidates {
     background-color: darken(@base-background-color, 15%);
   }
 
-  li.complete-candidate.selected {
+  li.vmp-ex-mode-candidate.selected {
     background-color: yellow;
   }
 }

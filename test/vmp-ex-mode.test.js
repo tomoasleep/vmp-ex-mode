@@ -2,7 +2,7 @@
 import { TextEditor } from 'atom';
 import { expect } from 'chai';
 import VmpExMode from '../lib/vmp-ex-mode';
-import CmdlineViewModel from '../lib/cmdline-view-model';
+import PanelViewModel from '../lib/panel-view-model';
 
 describe('vmp-ex-mode', () => {
   it('can be activated', () => {
@@ -21,7 +21,7 @@ describe('vmp-ex-mode', () => {
 
       expect(panels).to.satisfy((panels) => {
         return panels.some((element) => {
-          return element.getItem() instanceof CmdlineViewModel;
+          return element.getItem() instanceof PanelViewModel;
         });
       });
     });
