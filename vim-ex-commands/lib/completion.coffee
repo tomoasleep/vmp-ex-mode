@@ -14,7 +14,15 @@ class Complete
     if currentPos is 0
       @commandSearch(command)
     else
-      @argsSearch(command, currentPos - 1, args[currentPos - 1])
+      @decorateCandidatesWithText(@argsSearch(command, currentPos - 1, args[currentPos - 1]), command, args)
+
+  decorateCandidatesWithText: (candidates, command, args) ->
+    prefix = [command].concat(args.slice(0, args.length - 1)).join(' ')
+    candidates.map (candidate) =>
+      name: candidate.name
+      description: candidate.description
+      text: "#{prefix} #{candidate.name}"
+
 
   commandSearch: (commandInput) ->
     _.map(@registory.searchCommands(commandInput), (cmd) ->
