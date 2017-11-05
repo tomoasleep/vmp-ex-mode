@@ -1,5 +1,5 @@
 BaseType = require './base.coffee'
-_ = require 'underscore-plus'
+_ = require 'lodash'
 
 module.exports =
   class Command extends BaseType

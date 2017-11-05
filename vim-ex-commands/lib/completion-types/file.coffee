@@ -3,7 +3,7 @@ fs = require 'fs'
 path = require 'path'
 Base = require './base'
 Place = require '../models/place'
-_ = require 'underscore-plus'
+_ = require 'lodash'
 Promise.promisifyAll(fs)
 
 homedir = process.env[if process.platform is 'win32' then 'USERPROFILE' else 'HOME']

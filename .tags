@@ -1,0 +1,9 @@
+constructor	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/cmdline-component.js	/^  constructor(...args) {$/;"	function	line:6
+render	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/cmdline-component.js	/^  render() {$/;"	function	line:11
+componentDidMount	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/cmdline-component.js	/^  componentDidMount() {$/;"	function	line:22
+constructor	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/text-editor/component.js	/^  constructor(...args) {$/;"	function	line:6
+render	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/text-editor/component.js	/^  render() {$/;"	function	line:11
+componentDidMount	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/text-editor/component.js	/^  componentDidMount() {$/;"	function	line:17
+componentWillUnmount	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/text-editor/component.js	/^  componentWillUnmount() {$/;"	function	line:30
+componentWillReceiveProps	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/text-editor/component.js	/^  componentWillReceiveProps({ text }) {$/;"	function	line:36
+shouldComponentUpdate	/Users/tomoya/.ghq/github.com/tomoasleep/vmp-ex-mode/lib/text-editor/component.js	/^  shouldComponentUpdate(nextProps, nextState) {$/;"	function	line:45

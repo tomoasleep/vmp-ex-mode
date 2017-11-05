@@ -1,4 +1,4 @@
-_ = require 'underscore-plus'
+_ = require 'lodash'
 { filter } = require 'fuzzaldrin'
 
 module.exports =

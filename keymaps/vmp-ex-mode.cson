@@ -10,6 +10,12 @@
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   ':': 'vmp-ex-mode:open'
 
+'github-StubItem-git-tab-controller':
+  ':': 'vmp-ex-mode:open'
+
+'github-PrPaneItem':
+  ':': 'vmp-ex-mode:open'
+
 '.vmp-ex-mode-command-line .editor-container atom-text-editor':
   'ctrl-w': 'editor:delete-to-beginning-of-word'
   'tab': 'vmp-ex-mode:complete-next'

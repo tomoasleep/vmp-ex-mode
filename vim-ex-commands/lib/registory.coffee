@@ -1,4 +1,4 @@
-_ = require 'underscore-plus'
+_ = require 'lodash'
 ExCommand = require './ex-command'
 ExShell = require './ex-shell'
 

@@ -1,12 +1,10 @@
-'use babel';
-import { createRunner } from 'atom-mocha-test-runner';
+const path = require('path');
 
-function optionalConfigurationFunction(mocha) {
-  const path = require('path');
+export default function configure(mocha) {
   const testPackagePath = path.join(__dirname, '..');
   const testPackageName = require(path.join(testPackagePath, 'package.json')).name;
 
-  mocha.suite.beforeEach(() => {
+  mocha.suite.beforeAll(() => {
     const originalResolveFunction = atom.packages.resolvePackagePath;
     atom.packages.resolvePackagePath = function (packageName) {
       if (packageName === testPackageName) {
@@ -17,7 +15,3 @@ function optionalConfigurationFunction(mocha) {
     };
   });
 }
-
-module.exports = createRunner({
-  reporter: 'spec',
-}, optionalConfigurationFunction);

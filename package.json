@@ -9,19 +9,43 @@
     "atom": "^1.0"
   },
   "dependencies": {
+    "atom-babel6-transpiler": "^1.1.2",
+    "autobind-decorator": "^2.1.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-preact": "^1.1.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "preact": "^7.2.1",
     "preact-redux": "^2.0.1",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
+    "testdouble": "^3.2.6",
+    "tmp": "^0.0.33",
     "vim-ex-commands": "file:vim-ex-commands"
   },
   "devDependencies": {
     "atom-mocha-test-runner": "^1.0.0",
-    "chai": "^3.5.0",
+    "babel-cli": "^6.26.0",
+    "chai": "^4.1.2",
     "eslint": "^3.19.0",
+    "flow-bin": "^0.54.1",
     "tap": "^10.3.2"
   },
-  "atomTestRunner": "./test/custom-test-runner",
+  "atomTestRunner": "./test/test-runner.js",
+  "atomTranspilers": [
+    {
+      "glob": "lib/**/*.{js,jsx}",
+      "transpiler": "atom-babel6-transpiler"
+    },
+    {
+      "glob": "test/**/*.{js,jsx}",
+      "transpiler": "atom-babel6-transpiler"
+    }
+  ],
   "consumedServices": {
     "vim-mode-plus": {
       "versions": {
