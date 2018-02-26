@@ -1,16 +1,17 @@
-'use babel';
+// @flow
+// @jsx h
 import { CompositeDisposable, TextEditor } from 'atom';
 import { h, Component } from 'preact';
 
 export default class TextEditorComponent extends Component {
-  constructor(...args) {
-    super(...args);
+  constructor(props, context) {
+    super(props, context);
     this._editor = {};
   }
 
   render() {
     return (
-      h('div', { className: 'editor-container', ref: (el) => { this.ref = el; }, dangerouslySetInnerHTML: { __html: '' } })
+      <div className="editor-container" ref={(el) => { this.ref = el; }} dangerouslySetInnerHTML={{__html: ''}}/>
     );
   }
 

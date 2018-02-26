@@ -1,0 +1,10 @@
+[ignore]
+
+[include]
+
+[libs]
+./lib/decls
+
+[lints]
+
+[options]

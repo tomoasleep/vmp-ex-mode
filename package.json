@@ -20,12 +20,9 @@
     "babel-preset-stage-3": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "preact": "^7.2.1",
-    "preact-redux": "^2.0.1",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0",
     "testdouble": "^3.2.6",
     "tmp": "^0.0.33",
-    "vim-ex-commands": "file:vim-ex-commands"
+    "unistore": "^2.3.0"
   },
   "devDependencies": {
     "atom-mocha-test-runner": "^1.0.0",
